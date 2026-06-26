@@ -1,0 +1,374 @@
+:root {
+  --primary: #7c3aed;
+  --dark: #2d1b4e;
+  --bg: #faf7ff;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 7%;
+
+  background: white;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 10;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.nav-btn,
+.btn,
+.btn-card {
+  background: var(--primary);
+
+  color: white;
+
+  padding: 12px 25px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 80px 7%;
+
+  background: linear-gradient(135deg, #ede9fe, #ffffff);
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero h1 {
+  font-size: 45px;
+}
+
+.hero p {
+  margin: 20px 0;
+
+  line-height: 1.6;
+}
+
+.hero-image img {
+  width: 420px;
+
+  border-radius: 25px;
+}
+
+/* PRODUK */
+
+.produk {
+  padding: 80px 7%;
+
+  text-align: center;
+}
+
+.produk-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 15px;
+}
+
+.card h4 {
+  color: var(--primary);
+
+  margin: 15px;
+}
+
+/* CARA PESAN */
+
+.cara {
+  padding: 70px 7%;
+  background: #f4ecff;
+  text-align: center;
+}
+
+.cara h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.steps {
+  margin-top: 40px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.steps div {
+  background: white;
+
+  padding: 35px 20px;
+
+  border-radius: 25px;
+
+  position: relative;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.steps div:hover {
+  transform: translateY(-8px);
+}
+
+.steps span {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 45px;
+
+  height: 45px;
+
+  background: #7c3aed;
+
+  color: white;
+
+  border-radius: 50%;
+
+  margin: -55px auto 15px;
+
+  font-weight: bold;
+}
+
+.steps h3 {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+}
+
+.steps p {
+  font-size: 15px;
+
+  color: #555;
+}
+
+/*KONTAK */
+
+.kontak {
+  padding: 80px 7%;
+
+  background: white;
+}
+
+.kontak h2 {
+  text-align: center;
+
+  font-size: 32px;
+
+  margin-bottom: 40px;
+}
+
+.kontak-box {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+.kontak-box > div {
+  background: #f8f5ff;
+
+  padding: 35px;
+
+  border-radius: 25px;
+}
+
+.kontak-box h3 {
+  font-size: 25px;
+
+  margin-bottom: 20px;
+}
+.kontak-box p {
+  margin: 15px 0;
+
+  font-size: 16px;
+}
+form {
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+input,
+textarea {
+  width: 100%;
+  padding: 15px 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+textarea {
+  height: 120px;
+  resize: none;
+}
+form button {
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* TENTANG */
+
+.tentang {
+  padding: 80px 7%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 50px;
+
+  background: white;
+}
+
+.tentang img {
+  width: 300px;
+
+  border-radius: 20px;
+}
+
+.tentang-text {
+  flex: 1;
+}
+
+.tentang-text p {
+  line-height: 1.8;
+
+  margin-top: 15px;
+}
+
+/* KEUNGGULAN */
+
+.unggulan {
+  padding: 80px 7%;
+
+  text-align: center;
+}
+
+.unggulan-box {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin-top: 40px;
+}
+
+.unggulan-box div {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .tentang {
+    flex-direction: column;
+  }
+
+  .unggulan-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .kontak-box {
+    grid-template-columns: 1fr;
+  }
+}
